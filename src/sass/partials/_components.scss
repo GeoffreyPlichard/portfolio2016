@@ -1,0 +1,239 @@
+
+.container { 
+  width: 90%;
+  max-width: 1170px;
+  margin: 0 auto;
+}
+
+.full-screen {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 100%;
+}
+
+.divider {
+  width: 100px;
+  margin: 0 auto;
+  border-bottom: 1px solid $primary-color;
+}
+
+.glyphicon {
+  position: relative;
+  top: 1px;
+  display: inline-block;
+  font-family: 'Glyphicons Halflings';
+  font-style: normal;
+  font-weight: normal;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.glyphicon-arrow-down:before {
+  content: "\e094";
+}
+
+// Buttons
+
+.btn {
+  padding: 0.893em 1.190em;
+  border-radius: 3px;
+  display: inline-block;
+  font-weight: bold;
+  transition: all 0.2s;
+  font-size: .8em;
+}
+
+.btn-main {
+  @extend .btn;
+  color: $secondary-color;
+  background-color: transparent;
+  border: 1px solid $secondary-color;
+}
+
+.btn-main:hover {
+  @extend .btn;
+  background-color: $secondary-color;
+  color: $primary-color;
+}
+.btn-main:active {
+  @extend .btn;
+  background-color: $primary-color-lighter;
+  border-color: $primary-color-lighter;
+  color: $primary-color;
+}
+
+.btn-second {
+  @extend .btn;
+  color: $secondary-color;
+  background-color: $primary-color;
+  border: 1px solid $primary-color;
+}
+
+.btn-second:hover {
+  @extend .btn;
+  background-color: transparent;
+  color: $primary-color;
+}
+.btn-second:active {
+  @extend .btn;
+  background-color: $primary-color-lighter;
+  border-color: $primary-color-lighter;
+  color: $primary-color;
+}
+
+// Arrow
+
+.arrow-down a {
+  font-size: 3em;
+  color: $secondary-color;
+}
+.arrow-down a:hover {
+  color: $primary-color-lighter;
+}
+
+// Phones
+
+.laptop-top {
+  border-radius: 15px 15px 0 0;
+  height: 30px;
+  background-color: #DADADA;
+  padding: 10px 0 0 8px;
+
+  ul li {
+    float:left;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: #FF5D5B;
+    margin-right: 10px;
+
+    &:nth-child(2) {
+      background-color: #FFBB4E;
+    }
+
+    &:nth-child(3) {
+      background-color: #00C754;
+    }
+  }
+}
+
+.laptop-content img {
+  width: 100%;
+  border-radius: 0 0 15px 15px;
+}
+
+.phone {
+  position: relative;
+  margin: 0 auto;
+  max-width: 400px;
+  border-radius: 20px;
+  border-right: 20px solid #000;
+  border-left: 20px solid #000;
+  border-top: 60px solid #000;
+  border-bottom: 60px solid #000;
+
+  &:before {
+    content: '';
+    width: 10px;
+    height: 10px;
+    background-color: #ccc;
+    border-radius: 50%;
+    position: absolute;
+    top: -30px;
+    left: 0;
+    right: 0;
+    display: block;
+    margin: auto;
+    opacity: .25;
+  }
+
+  &:after {
+    content: '';
+    width: 25px;
+    height: 25px;
+    background-color: #ccc;
+    border-radius: 50%;
+    position: absolute;
+    bottom: -40px;
+    left: 0;
+    right: 0;
+    display: block;
+    margin: auto;
+    opacity: .25;
+  }
+
+  img {
+    width: 100%;
+    vertical-align: top;
+  }
+}
+
+// Social
+
+.social {
+  li {
+    display: inline-block;
+    margin: 0 4px;
+    a {
+      display: block;
+      text-decoration: none;
+      border-bottom: none;
+      padding: 18px;
+      border-radius: 3px;
+      transition: all 0.3s ease-in, .3s;
+      
+    }
+  }
+}
+
+/*.sprite-codepen {
+  background-image: url(../img/social-sprite.png);
+  background-position: 9.5px 9.5px;
+}
+
+.sprite-codepen:hover {
+  background-color: #000;
+}*/
+
+.sprite-github {
+  background-image: url(../img/social-sprite.png);
+  background-position: -130px 9.5px;
+  background-repeat: no-repeat;
+}
+
+.sprite-github:hover {
+  background-color: #000;
+}
+
+.sprite-li {
+  background-image: url(../img/social-sprite.png);
+  background-position: -199px 9.5px;
+  background-repeat: no-repeat;
+}
+
+.sprite-li:hover {
+  background-color: #0073b2;
+}
+
+.sprite-tt {
+  background-image: url(../img/social-sprite.png);
+  background-position: -267px 9.5px;
+  background-repeat: no-repeat;
+}
+
+.sprite-tt:hover {
+  background-color: #9ae4e8;
+}
+
+/*.sprite-viadeo {
+  background-image: url(../img/social-sprite.png);
+  background-position: -337px 9.5px;
+}
+
+.sprite-viadeo:hover {
+  background-color: #ff974d;
+}*/
+

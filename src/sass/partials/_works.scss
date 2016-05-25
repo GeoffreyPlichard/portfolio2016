@@ -1,0 +1,16 @@
+.work-list {
+  align-items: center;
+  padding-bottom: 1.579em;
+}
+
+.work-list-description {
+  margin-top: 1.579em;
+  margin-bottom: 1.579em;
+}
+
+.works .work-list:nth-child(odd) {
+    flex-direction: column;
+  }
+  .works .work-list:nth-child(even) {
+    flex-direction: column-reverse;
+  }

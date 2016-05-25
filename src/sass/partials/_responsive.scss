@@ -1,0 +1,145 @@
+$mw-s:  320px;
+$mw-m:  768px;
+$mw-l:  1024px;
+$mw-xl: 1382px;
+
+// Mobile
+@media screen and (min-width: $mw-s) {
+}
+
+// Tablets
+@media screen and (min-width: $mw-m) {
+  body {
+    font-size: $md-font-size;
+    line-height: $md-line-height;
+  }
+
+  // TIMELINE
+
+  .timeline-content h2 {
+    font-size: 20px;
+    line-height: 25px;
+  }
+
+  .timeline-content p {
+    font-size: 16px;
+  }
+
+  .cd-timeline-content .cd-date {
+    font-size: 14px;
+  }
+}
+
+// Ipads
+@media screen and (min-width: $mw-l) {
+
+  // WORKS
+  .works .work-list:nth-child(odd) {
+    flex-direction: initial;
+  }
+  .works .work-list:nth-child(even) {
+    flex-direction: initial;
+  }
+
+  // TIMELINE
+  .timeline {
+    margin-top: 3em;
+    margin-bottom: 3em;
+  }
+
+  .timeline::before {
+    left: 50%;
+    margin-left: -2px;
+  }
+
+  .timeline-block {
+    margin: 4em 0;
+  }
+
+  .timeline-block:first-child {
+    margin-top: 0;
+  }
+
+  .timeline-block:last-child {
+    margin-bottom: 0;
+  }
+
+  .timeline-img {
+    background-image: url("../img/timeline-sprite-64.png");
+    width: 60px;
+    height: 60px;
+    left: 50%;
+    margin-left: -30px;
+  }
+  .timeline-img a {
+    width: 64px;
+    height: 64px;
+  }
+
+  .timeline-arkena { background-position: 0px 0px; }
+  .timeline-byagency { background-position: -114px 0px; }
+  .timeline-cput { background-position: -230px 0px; }
+  .timeline-em { background-position: -344px 0px; }
+  .timeline-iut { background-position: -460px 0px; }
+
+  .cssanimations .timeline-img.is-hidden {
+    visibility: hidden;
+  }
+
+  .cssanimations .timeline-img.bounce-in {
+    visibility: visible;
+    -webkit-animation: bounce 0 .6s;
+            animation: bounce 0 .6s;
+  }
+
+  .timeline-content {
+    margin-left: 0;
+    padding: 1.6em;
+    width: 45%;
+  }
+
+  .timeline-content .date {
+    position: absolute;
+    width: 100%;
+    left: 122%;
+    top: 6px;
+    font-size: 16px;
+  }
+  .timeline-block:nth-child(even) .timeline-content .date {
+    left: auto;
+    right: 122%;
+    text-align: right;
+  }
+  .timeline-block:nth-child(even) .timeline-content {
+    float: right;
+  }
+
+  .timeline-content::before {
+    top: 24px;
+    left: 100%;
+    border-color: transparent;
+    border-left-color: white;
+  }
+  .timeline-block:nth-child(even) .timeline-content::before {
+    top: 24px;
+    left: auto;
+    right: 100%;
+    border-color: transparent;
+    border-right-color: white;
+  }
+
+  .cssanimations .timeline-content.is-hidden {
+    visibility: hidden;
+  }
+
+  .cssanimations .timeline-content.bounce-in {
+    visibility: visible;
+    -webkit-animation: move-right 0.6s;
+            animation: move-right 0.6s;
+  }
+}
+
+// Powerbooks
+@media screen and (min-width: $mw-xl) {
+
+}

@@ -1,0 +1,12 @@
+.home {
+  position:relative;
+  background-color: $primary-color;
+}
+
+.home .arrow-down {
+  position: absolute;
+  bottom: 1em;
+  display: block;
+  text-align: center;
+  width: 100%;
+}
